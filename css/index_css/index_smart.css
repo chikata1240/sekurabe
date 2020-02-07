@@ -1,0 +1,90 @@
+body {
+  width: 100vw;
+}
+
+body header {
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+}
+
+body header p {
+  font-size: 30px;
+  line-height: 100px;
+}
+
+body .super_details {
+  width: 90%;
+  margin: 50px auto 0;
+  background-color: #aaa;
+  border-radius: 15px;
+}
+
+body .super_details .super_box {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+body .super_details .super_box .super_name {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+body .super_details .super_box .super_type {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+body .super_details .product {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .super_details .product p {
+  line-height: 50px;
+}
+
+body footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #000;
+  text-align: center;
+  width: 100vw;
+  height: 80px;
+}
+
+body footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer div p {
+  font-size: 25px;
+  line-height: 80px;
+  width: 50%;
+}
+
+body footer div p:first-child {
+  border-right: solid 1px #000;
+}
+
+body footer div p:last-child {
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=index_smart.css.map */
