@@ -54,12 +54,14 @@ $supers = $db->query('SELECT supermarket FROM kitchen GROUP BY supermarket');
               $type['type']
             ));
             ?>
-            <?php while ($product = $products->fetch()) : ?>
-              <div class="super_box product">
-                <p><?php print($product['name']); ?></p>
-                <p><?php print($product['TRUNCATE(AVG(price),0)']); ?></p>
-              </div>
-            <?php endwhile; ?>
+            <div class="product_box">
+              <?php while ($product = $products->fetch()) : ?>
+                <div class="super_box product">
+                  <p><?php print($product['name']); ?></p>
+                  <p><?php print($product['TRUNCATE(AVG(price),0)']); ?>円</p>
+                </div>
+              <?php endwhile; ?>
+            </div>
           <?php endif; ?>
           <!-- name price呼び出し -->
         <?php endwhile; ?>
@@ -71,13 +73,22 @@ $supers = $db->query('SELECT supermarket FROM kitchen GROUP BY supermarket');
 
   <!-- footer -->
   <footer>
-    <div>
-      <p>
-        入力
-      </p>
-      <p>
-        履歴
-      </p>
+
+    <div class="flex_box">
+      <div>
+        <a href="input.php">
+          <p>
+            入力
+          </p>
+        </a>
+      </div>
+      <div>
+        <a href="details.php">
+          <p>
+            履歴
+          </p>
+        </a>
+      </div>
     </div>
   </footer>
 
