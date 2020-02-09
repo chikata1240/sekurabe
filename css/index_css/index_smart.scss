@@ -1,11 +1,14 @@
 body{
   width: 100vw;
+  background-color: #f7fbfc;
   header{
     width: 100vw;
     height: 100px;
     text-align: center;
+    background-color: #b9d7ea;
     p{
       font-size: 30px;
+      font-weight: 600;
       line-height: 100px;
     }
   }
@@ -13,8 +16,8 @@ body{
   .super_details{
     width: 90%;
     margin: 50px auto 0;
-    background-color: #aaa;
-    border-radius: 15px;
+    background-color: #d6e6f2;
+    border-radius: 5px;
 
     .super_box{
       width: 100%;
@@ -23,20 +26,29 @@ body{
       .super_name{
         font-size: 25px;
         line-height: 50px;
+        border-bottom: dashed 3px #769fcd;
       }
       .super_type{
         font-size: 20px;
         line-height: 50px;
+        border-bottom: dashed 3px #769fcd;
       }
     }
-    .product{
+    .product_box{
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 30%;
-      box-sizing: border-box;
-      p{
-        line-height: 50px;
+      .product{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30%;
+        box-sizing: border-box;
+        border-top: dashed 1px #769fcd;
+        &:first-child{
+          border-top: none;
+        }
+        p{
+          line-height: 50px;
+        }
       }
     }
   }// super_details
@@ -44,27 +56,29 @@ body{
   footer{
     position: fixed;
     bottom: 0;
-    background-color: #fff;
+    background-color: #b9d7ea;
     box-sizing: border-box;
-    border: solid 1px #000;
     text-align: center;
     width: 100vw;
     height: 80px;
-    div{
+    .flex_box{
       display: flex;
       justify-content: space-between;
-      p{
+      div{
         font-size: 25px;
         line-height: 80px;
-        
         width: 50%;
         &:first-child{
-          border-right: solid 1px #000;
+          border-right: solid 2px #769fcd;
         }
         &:last-child{
           letter-spacing: 2px;
         }
+        a{
+          text-decoration: none;
+          color: #000;
+        }
       }
     }
-  }
+  }// footer
 }// body
