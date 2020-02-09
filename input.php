@@ -5,7 +5,7 @@ $supers = $db->query('SELECT supermarket from kitchen GROUP BY supermarket');
 
 if (!empty($_POST)) {
   if ($_POST['name'] !== '' && $_POST['supermarket'] !== '' && $_POST['price'] !== '' && $_POST['type'] !== '') {
-    $budget = $db->prepare('INSERT INTO test SET name=?, supermarket=?, price=?, type=? ');
+    $budget = $db->prepare('INSERT INTO kitchen SET name=?, supermarket=?, price=?, type=? ');
     $budget->execute(array(
       $_POST['name'],
       $_POST['supermarket'],
@@ -91,8 +91,11 @@ if (!empty($_POST)) {
     </div>
   </form>
 
+  <!-- フッター -->
   <footer>
-    <p>ホーム</p>
+    <a href="index.php">
+      <p>ホーム</p>
+    </a>
   </footer>
 </body>
 
