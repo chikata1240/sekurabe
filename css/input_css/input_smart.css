@@ -1,14 +1,15 @@
 body {
-  background: #e91e63;
+  background: #f7fbfc;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 body form {
-  background: #fff;
+  background: #d6e6f2;
   width: 90%;
   margin: 50px auto 0;
-  padding: 30px;
+  padding: 0 30px 30px;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,6 +21,10 @@ body form .title_box {
   font-size: 25px;
   text-align: center;
   border-bottom: solid 2px #b6b6b6;
+}
+
+body form .title_box p {
+  line-height: 50px;
 }
 
 body form .supermarkets_box {
@@ -107,7 +112,7 @@ body form .type_box .inline-radio div:last-child label {
 }
 
 body form .type_box .inline-radio div input:checked + label {
-  background: #646464;
+  background: #769fcd;
   color: #fff;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
 }
@@ -141,12 +146,17 @@ body form .submit_box .submit {
 body footer {
   width: 100%;
   height: 70px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  background-color: #fff;
+  background-color: #b9d7ea;
 }
 
-body footer p {
+body footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+body footer a p {
   font-size: 25px;
   line-height: 70px;
   text-align: center;
