@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=details_pc.css.map */
+@charset "UTF-8";
+@media screen and (min-width: 520px) {
+  body {
+    width: 100vw;
+    margin-bottom: 90px;
+    background-color: #f7fbfc;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+  body .detail_box {
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 30px;
+    background-color: #d6e6f2;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body .detail_box .detail_file {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+  }
+  body .detail_box .detail_file:nth-child(odd) {
+    margin-top: 20px;
+  }
+  body .detail_box .detail_file:nth-child(even) {
+    border-bottom: dashed 2px #b6b6b6;
+  }
+  body .detail_box .detail_file p {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .detail_box .detail_file p a {
+    text-decoration: none;
+    color: #000;
+  }
+  body .detail_box .detail_file p a span {
+    padding: 2px 5px;
+    border: dashed 1px #000;
+  }
+  body .detail_box .page_box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body footer {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: #b9d7ea;
+  }
+  body footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  body footer a p {
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=details_pc.css.map */
