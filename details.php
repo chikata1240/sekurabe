@@ -1,7 +1,17 @@
 <?php
 require('dbconnect.php');
 
-$details = $db->query('SELECT * FROM kitchen ORDER BY time DESC')
+if (isset($_REQUEST['page']) && is_numeric($_REQUEST['page'])) {
+  $page = $_REQUEST['page'];
+} else {
+  $page = 1;
+}
+
+$start = 10 * ($page - 1);
+
+$details = $db->prepare('SELECT * FROM kitchen ORDER BY time DESC LIMIT ?, 10');
+$details->bindParam(1, $start, PDO::PARAM_INT);
+$details->execute();
 
 ?>
 
@@ -39,6 +49,24 @@ $details = $db->query('SELECT * FROM kitchen ORDER BY time DESC')
         <p><?php print($detail['price']); ?>円</p>
       </div>
     <?php endwhile; ?>
+
+    <!-- ページネーション -->
+    <div class="page_box">
+      <!-- 前ページ -->
+      <?php if ($page >= 2) : ?>
+        <a href="details.php?page=<?php print($page - 1); ?>"><?php print($page - 1); ?>ページ目へ</a>
+      <?php endif; ?>
+      |
+      <!-- 次ページ -->
+      <?php
+      $counts = $db->query('SELECT COUNT(*) as cnt FROM kitchen');
+      $count = $counts->fetch();
+      $max_page = ceil($count['cnt'] / 10);
+      if ($page < $max_page) :
+      ?>
+        <a href="details.php?page=<?php print($page + 1); ?>"><?php print($page + 1); ?>ページ目へ</a>
+      <?php endif; ?>
+    </div>
   </div>
 
   <!-- フッター -->
