@@ -1,164 +1,143 @@
-body {
-  background: #f7fbfc;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-body form {
-  background: #d6e6f2;
-  width: 90%;
-  margin: 50px auto 0;
-  padding: 0 30px 30px;
-  border-radius: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body form .title_box {
-  width: 100%;
-  height: 50px;
-  font-size: 25px;
-  text-align: center;
-  border-bottom: solid 2px #b6b6b6;
-}
-
-body form .title_box p {
-  line-height: 50px;
-}
-
-body form .supermarkets_box {
-  margin-top: 20px;
-}
-
-body form .supermarkets_box label {
-  line-height: 1.3;
-}
-
-body form .supermarkets_box input {
-  width: 50%;
-  height: 15px;
-  margin-bottom: 5px;
-}
-
-body form .name_box {
-  margin-top: 20px;
-}
-
-body form .name_box label {
-  line-height: 1.3;
-}
-
-body form .name_box input {
-  width: 50%;
-  height: 15px;
-}
-
-body form .type_box {
-  width: 90%;
-  margin: 20px auto;
-}
-
-body form .type_box .inline-radio {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 3px;
-  border: 1px solid #b6b6b6;
-}
-
-body form .type_box .inline-radio:last-child {
-  border-top: 0;
-}
-
-body form .type_box .inline-radio div {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-body form .type_box .inline-radio div input {
-  width: 100%;
-  height: 30px;
-}
-
-body form .type_box .inline-radio div label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #b6b6b6;
-  width: 100%;
-  height: 100%;
-  font-size: 10px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-right: 1px solid #b6b6b6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body form .type_box .inline-radio div:last-child label {
-  border-right: 0;
-}
-
-body form .type_box .inline-radio div input:checked + label {
-  background: #769fcd;
-  color: #fff;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
-}
-
-body form .price_box label {
-  line-height: 1.3;
-}
-
-body form .price_box input {
-  width: 40%;
-  height: 15px;
-  text-align: right;
-  padding-right: 5px;
-}
-
-body form .submit_box {
-  width: 100;
-  margin-top: 20px;
-  text-align: center;
-}
-
-body form .submit_box .submit {
-  padding: 5px 20px 5px;
-  display: inline-block;
-  font-size: 20px;
-  background-color: #ccc;
-  border-radius: 5px;
-  letter-spacing: 3px;
-}
-
-body footer {
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  bottom: 0;
-  background-color: #b9d7ea;
-}
-
-body footer a {
-  text-decoration: none;
-  color: #000;
-}
-
-body footer a p {
-  font-size: 25px;
-  line-height: 70px;
-  text-align: center;
+@charset "UTF-8";
+@media screen and (max-width: 520px) {
+  body {
+    background: #f7fbfc;
+    width: 100vw;
+    margin-bottom: 90px;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+  body form {
+    background: #d6e6f2;
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 0 30px 30px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body form .title_box {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: solid 2px #b6b6b6;
+  }
+  body form .title_box p {
+    line-height: 50px;
+  }
+  body form .supermarkets_box {
+    margin-top: 20px;
+  }
+  body form .supermarkets_box label {
+    line-height: 1.3;
+  }
+  body form .supermarkets_box input {
+    width: 50%;
+    height: 15px;
+    margin-bottom: 5px;
+  }
+  body form .name_box {
+    margin-top: 20px;
+  }
+  body form .name_box label {
+    line-height: 1.3;
+  }
+  body form .name_box input {
+    width: 50%;
+    height: 15px;
+  }
+  body form .type_box {
+    width: 90%;
+    margin: 20px auto;
+  }
+  body form .type_box .inline-radio {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid #b6b6b6;
+  }
+  body form .type_box .inline-radio:last-child {
+    border-top: 0;
+  }
+  body form .type_box .inline-radio div {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body form .type_box .inline-radio div input {
+    width: 100%;
+    height: 30px;
+  }
+  body form .type_box .inline-radio div label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #b6b6b6;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px solid #b6b6b6;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body form .type_box .inline-radio div:last-child label {
+    border-right: 0;
+  }
+  body form .type_box .inline-radio div input:checked + label {
+    background: #769fcd;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+  }
+  body form .price_box label {
+    line-height: 1.3;
+  }
+  body form .price_box input {
+    width: 40%;
+    height: 15px;
+    text-align: right;
+    padding-right: 5px;
+  }
+  body form .submit_box {
+    width: 100;
+    margin-top: 20px;
+    text-align: center;
+  }
+  body form .submit_box .submit {
+    padding: 5px 20px 5px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    letter-spacing: 3px;
+  }
+  body footer {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    background-color: #b9d7ea;
+  }
+  body footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  body footer a p {
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=input_smart.css.map */
