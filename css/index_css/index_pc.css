@@ -1,73 +1,87 @@
 @charset "UTF-8";
-@media screen and (min-width: 520px) {
-  body {
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 62.5%;
+  }
+  html body {
     width: 100vw;
     margin-bottom: 120px;
     background-color: #f7fbfc;
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
   }
-  body header {
+  html body header {
     width: 100vw;
     height: 100px;
     text-align: center;
     background-color: #b9d7ea;
   }
-  body header p {
-    font-size: 30px;
+  html body header p {
+    font-size: 3rem;
     font-weight: 600;
     line-height: 100px;
   }
-  body .index_box {
+  html body .index_box {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  body .index_box .super_details {
-    -webkit-box-flex: 6;
-        -ms-flex: 6;
-            flex: 6;
-    margin: 50px 30px 0;
+  html body .index_box .super_details {
+    width: 30%;
+    margin-bottom: 30px;
     background-color: #d6e6f2;
     border-radius: 7px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
-  body .index_box .super_details .super_box {
+  html body .index_box .super_details .super_box {
     width: 100%;
     height: 50px;
     text-align: center;
   }
-  body .index_box .super_details .super_box .super_name {
-    font-size: 25px;
+  html body .index_box .super_details .super_box .super_name {
+    font-size: 2.5rem;
     line-height: 50px;
   }
-  body .index_box .super_details .super_box .super_type {
-    font-size: 20px;
+  html body .index_box .super_details .super_box .super_type {
+    font-size: 2rem;
     line-height: 44px;
     border-top: dashed 3px #769fcd;
     border-bottom: dashed 3px #769fcd;
   }
-  body .index_box .super_details .product_box {
+  html body .index_box .super_details .product_box {
     width: 100%;
   }
-  body .index_box .super_details .product_box .product {
+  html body .index_box .super_details .product_box .product {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0 20%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top: dashed 1px #769fcd;
   }
-  body .index_box .super_details .product_box .product:first-child {
+  html body .index_box .super_details .product_box .product:first-child {
     border-top: none;
   }
-  body .index_box .super_details .product_box .product p {
-    line-height: 50px;
+  html body .index_box .super_details .product_box .product p {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-left: 5px;
   }
-  body footer {
+  html body footer {
     position: fixed;
     bottom: 0;
     background-color: #b9d7ea;
@@ -77,7 +91,7 @@
     width: 100vw;
     height: 80px;
   }
-  body footer .flex_box {
+  html body footer .flex_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -85,18 +99,18 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body footer .flex_box div {
-    font-size: 25px;
+  html body footer .flex_box div {
+    font-size: 2.5rem;
     line-height: 80px;
     width: 50%;
   }
-  body footer .flex_box div:first-child {
+  html body footer .flex_box div:first-child {
     border-right: solid 2px #769fcd;
   }
-  body footer .flex_box div:last-child {
+  html body footer .flex_box div:last-child {
     letter-spacing: 2px;
   }
-  body footer .flex_box div a {
+  html body footer .flex_box div a {
     text-decoration: none;
     color: #000;
   }
